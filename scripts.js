@@ -49,11 +49,11 @@ document.getElementById('national-emergency-call-btn')
         div.innerHTML = `
          <div class="flex justify-between items-center p-4 mt-2 bg-[#F5F5F5] rounded-lg">
                             <div>
-                                <h1 class="font-bold">${data.name}</h1>
-                                <h1>${data.number}</h1>
+                                <h1 class="font-bold">${history.name}</h1>
+                                <h1>${history.number}</h1>
                             </div>
                             <div>
-                                <h1>${data.date}</h1>
+                                <h1>${history.date}</h1>
                             </div>
                         </div>
         `
@@ -86,8 +86,9 @@ document.getElementById('police-call-btn')
         number: '999',
         date: new Date().toLocaleTimeString()
       };
+      
       callingData.push(data);
-      console.log(callingData);
+      // console.log(callingData);
 
       const historyContainer = document.getElementById('history-container')
 
@@ -97,11 +98,11 @@ document.getElementById('police-call-btn')
         div.innerHTML = `
          <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-[#F5F5F5] rounded-lg">
                             <div>
-                                <h1 class="font-bold">${data.name}</h1>
-                                <h1>${data.number}</h1>
+                                <h1 class="font-bold">${history.name}</h1>
+                                <h1>${history.number}</h1>
                             </div>
                             <div>
-                                <h1>${data.date}</h1>
+                                <h1>${history.date}</h1>
                             </div>
                         </div>
         `
@@ -145,11 +146,11 @@ document.getElementById('fire-service-call-btn')
         div.innerHTML = `
          <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-[#F5F5F5] rounded-lg">
                             <div>
-                                <h1 class="font-bold">${data.name}</h1>
-                                <h1>${data.number}</h1>
+                                <h1 class="font-bold">${history.name}</h1>
+                                <h1>${history.number}</h1>
                             </div>
                             <div>
-                                <h1>${data.date}</h1>
+                                <h1>${history.date}</h1>
                             </div>
                         </div>
         `
@@ -193,11 +194,11 @@ document.getElementById('ambulance-call-btn')
         div.innerHTML = `
          <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-[#F5F5F5] rounded-lg">
                             <div>
-                                <h1 class="font-bold">${data.name}</h1>
-                                <h1>${data.number}</h1>
+                                <h1 class="font-bold">${history.name}</h1>
+                                <h1>${history.number}</h1>
                             </div>
                             <div>
-                                <h1>${data.date}</h1>
+                                <h1>${history.date}</h1>
                             </div>
                         </div>
         `
@@ -241,11 +242,11 @@ document.getElementById('women-call-btn')
         div.innerHTML = `
          <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-[#F5F5F5] rounded-lg">
                             <div>
-                                <h1 class="font-bold">${data.name}</h1>
-                                <h1>${data.number}</h1>
+                                <h1 class="font-bold">${history.name}</h1>
+                                <h1>${history.number}</h1>
                             </div>
                             <div>
-                                <h1>${data.date}</h1>
+                                <h1>${history.date}</h1>
                             </div>
                         </div>
         `
@@ -289,11 +290,11 @@ document.getElementById('anti-corrup-call-btn')
         div.innerHTML = `
          <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-[#F5F5F5] rounded-lg">
                             <div>
-                                <h1 class="font-bold">${data.name}</h1>
-                                <h1>${data.number}</h1>
+                                <h1 class="font-bold">${history.name}</h1>
+                                <h1>${history.number}</h1>
                             </div>
                             <div>
-                                <h1>${data.date}</h1>
+                                <h1>${history.date}</h1>
                             </div>
                         </div>
         `
@@ -337,11 +338,11 @@ document.getElementById('electricity-call-btn')
         div.innerHTML = `
          <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-[#F5F5F5] rounded-lg">
                             <div>
-                                <h1 class="font-bold">${data.name}</h1>
-                                <h1>${data.number}</h1>
+                                <h1 class="font-bold">${history.name}</h1>
+                                <h1>${history.number}</h1>
                             </div>
                             <div>
-                                <h1>${data.date}</h1>
+                                <h1>${history.date}</h1>
                             </div>
                         </div>
         `
@@ -385,11 +386,11 @@ document.getElementById('brac-call-btn')
         div.innerHTML = `
          <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-[#F5F5F5] rounded-lg">
                             <div>
-                                <h1 class="font-bold">${data.name}</h1>
-                                <h1>${data.number}</h1>
+                                <h1 class="font-bold">${history.name}</h1>
+                                <h1>${history.number}</h1>
                             </div>
                             <div>
-                                <h1>${data.date}</h1>
+                                <h1>${history.date}</h1>
                             </div>
                         </div>
         `
@@ -433,11 +434,11 @@ document.getElementById('railway-call-btn')
         div.innerHTML = `
          <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-[#F5F5F5] rounded-lg">
                             <div>
-                                <h1 class="font-bold">${data.name}</h1>
-                                <h1>${data.number}</h1>
+                                <h1 class="font-bold">${history.name}</h1>
+                                <h1>${history.number}</h1>
                             </div>
                             <div>
-                                <h1>${data.date}</h1>
+                                <h1>${history.date}</h1>
                             </div>
                         </div>
         `
