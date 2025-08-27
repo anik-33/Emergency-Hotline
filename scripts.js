@@ -1,6 +1,6 @@
 // Event listener on click starts here 
 // heart button click event listener
-const callingData = []
+let callingData = []
 
 document.querySelectorAll('.heart-btn').forEach((btn, index) => {
   btn.addEventListener("click", () => {
@@ -47,7 +47,7 @@ document.getElementById('national-emergency-call-btn')
       for (const history of callingData) {
         const div = document.createElement('div')
         div.innerHTML = `
-         <div class="flex justify-between items-center p-4 mt-2 bg-slate-300 rounded-lg">
+         <div class="flex justify-between items-center p-4 mt-2 bg-[#F5F5F5] rounded-lg">
                             <div>
                                 <h1 class="font-bold">${data.name}</h1>
                                 <h1>${data.number}</h1>
@@ -95,7 +95,7 @@ document.getElementById('police-call-btn')
       for (const history of callingData) {
         const div = document.createElement('div')
         div.innerHTML = `
-         <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-slate-300 rounded-lg">
+         <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-[#F5F5F5] rounded-lg">
                             <div>
                                 <h1 class="font-bold">${data.name}</h1>
                                 <h1>${data.number}</h1>
@@ -143,7 +143,7 @@ document.getElementById('fire-service-call-btn')
       for (const history of callingData) {
         const div = document.createElement('div')
         div.innerHTML = `
-         <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-slate-300 rounded-lg">
+         <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-[#F5F5F5] rounded-lg">
                             <div>
                                 <h1 class="font-bold">${data.name}</h1>
                                 <h1>${data.number}</h1>
@@ -191,7 +191,7 @@ document.getElementById('ambulance-call-btn')
       for (const history of callingData) {
         const div = document.createElement('div')
         div.innerHTML = `
-         <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-slate-300 rounded-lg">
+         <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-[#F5F5F5] rounded-lg">
                             <div>
                                 <h1 class="font-bold">${data.name}</h1>
                                 <h1>${data.number}</h1>
@@ -239,7 +239,7 @@ document.getElementById('women-call-btn')
       for (const history of callingData) {
         const div = document.createElement('div')
         div.innerHTML = `
-         <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-slate-300 rounded-lg">
+         <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-[#F5F5F5] rounded-lg">
                             <div>
                                 <h1 class="font-bold">${data.name}</h1>
                                 <h1>${data.number}</h1>
@@ -287,7 +287,7 @@ document.getElementById('anti-corrup-call-btn')
       for (const history of callingData) {
         const div = document.createElement('div')
         div.innerHTML = `
-         <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-slate-300 rounded-lg">
+         <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-[#F5F5F5] rounded-lg">
                             <div>
                                 <h1 class="font-bold">${data.name}</h1>
                                 <h1>${data.number}</h1>
@@ -335,7 +335,7 @@ document.getElementById('electricity-call-btn')
       for (const history of callingData) {
         const div = document.createElement('div')
         div.innerHTML = `
-         <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-slate-300 rounded-lg">
+         <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-[#F5F5F5] rounded-lg">
                             <div>
                                 <h1 class="font-bold">${data.name}</h1>
                                 <h1>${data.number}</h1>
@@ -383,7 +383,7 @@ document.getElementById('brac-call-btn')
       for (const history of callingData) {
         const div = document.createElement('div')
         div.innerHTML = `
-         <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-slate-300 rounded-lg">
+         <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-[#F5F5F5] rounded-lg">
                             <div>
                                 <h1 class="font-bold">${data.name}</h1>
                                 <h1>${data.number}</h1>
@@ -431,7 +431,7 @@ document.getElementById('railway-call-btn')
       for (const history of callingData) {
         const div = document.createElement('div')
         div.innerHTML = `
-         <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-slate-300 rounded-lg">
+         <div class="flex justify-between items-center gap-2 p-4 mt-2 bg-[#F5F5F5] rounded-lg">
                             <div>
                                 <h1 class="font-bold">${data.name}</h1>
                                 <h1>${data.number}</h1>
@@ -449,6 +449,16 @@ document.getElementById('railway-call-btn')
       alert('Insufficient coin');
     }
   });
+
+
+  // history clear btn event listener
+  document.getElementById('clear-btn').addEventListener('click',function(){
+     const historyContainer = document.getElementById('history-container')
+
+      historyContainer.innerText = ''
+      callingData = [];
+       
+  })
 
 
 
