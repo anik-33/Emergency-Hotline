@@ -27,20 +27,20 @@
 
             <div class=" nav-right flex gap-3">
                 <div id="nav-heart"
-                    class="flex justify-center items-center gap-2 bg-[#ECFFF4] w-[123px] rounded-3xl p-3">
-                    <h1>0</h1>
-                    <img src="./assets/heart.png" class="w-[20%]" alt="">
+                    class="flex justify-center items-center gap-2 bg-[#ECFFF4]  rounded-3xl p-3">
+                    <h1 id="nav-heart-count">0</h1>
+                    <img src="./assets/heart.png" class="w-6" alt="">
                 </div>
 
-                <div id="nav-coin"
-                    class="flex justify-center items-center gap-2 bg-[#ECFFF4] w-[123px] rounded-3xl p-3">
-                    <h1>100</h1>
-                    <img src="./assets/coin.png" class="w-[20%]" alt="">
+                <div 
+                    class="flex justify-center items-center gap-2 bg-[#ECFFF4]  rounded-3xl p-3">
+                    <h1 id="nav-coin">100</h1>
+                    <img src="./assets/coin.png" class="w-6" alt="">
                 </div>
 
                 <div id="nav-copy"
-                    class="flex justify-center items-center gap-2 bg-green-500 w-[123px] rounded-3xl p-3">
-                    <h1>0</h1>
+                    class="flex justify-center items-center gap-2 bg-green-500  rounded-3xl p-3">
+                    <h1 id="copy-increase">0</h1>
                     <p>Copy</p>
                 </div>
             </div>
@@ -71,8 +71,8 @@
                                     <div class="bg-[#FFE3E2] rounded-lg p-2">
                                         <img src="./assets/emergency.png" class="w-8 " alt="">
                                     </div>
-                                    <div>
-                                        <img src="./assets/heart.png" class="w-8" alt="">
+                                    <div class="heart-btn">
+                                        <img src="./assets/heart.png" class=" w-8" alt="">
                                     </div>
                                 </div>
                                 <div class="p-2">
@@ -84,9 +84,9 @@
                                     <p class="bg-[#f2f2f2] rounded-full w-10 text-center mt-1">All</p>
                                 </div>
                                 <div class="card-actions justify-between items-center ">
-                                    <button class="btn rounded-lg bg-white w-[48%]"><i class="fa-regular fa-copy"></i>
+                                    <button id="national-emergency-copy-btn" class="btn rounded-lg bg-white w-[48%]"><i class="fa-regular fa-copy"></i>
                                         Copy</button>
-                                    <button class="btn rounded-lg w-[48%] bg-green-500 text-white "><i
+                                    <button id="national-emergency-call-btn" class="btn call-button rounded-lg w-[48%] bg-green-500 text-white "><i
                                             class="fa-solid fa-phone"></i> Call</button>
                                 </div>
                             </div>
@@ -99,8 +99,8 @@
                                     <div class="bg-[#FFE3E2] rounded-lg p-2">
                                         <img src="./assets/police.png" class="w-8 " alt="">
                                     </div>
-                                    <div>
-                                        <img src="./assets/heart.png" class="w-8" alt="">
+                                    <div class="heart-btn">
+                                        <img src="./assets/heart.png" class="w-8 " alt="">
                                     </div>
                                 </div>
                                 <div class="p-2">
@@ -114,7 +114,7 @@
                                 <div class="card-actions justify-between items-center ">
                                     <button class="btn rounded-lg bg-white w-[48%] "><i class="fa-regular fa-copy"></i>
                                         Copy</button>
-                                    <button class="btn rounded-lg w-[48%] bg-green-500 text-white  "><i
+                                    <button class="btn call-button rounded-lg w-[48%] bg-green-500 text-white  "><i
                                             class="fa-solid fa-phone"></i> Call</button>
                                 </div>
                             </div>
@@ -127,7 +127,7 @@
                                     <div class="bg-[#FFE3E2] rounded-lg p-2">
                                         <img src="./assets/fire-service.png" class="w-8 " alt="">
                                     </div>
-                                    <div>
+                                    <div class="heart-btn">
                                         <img src="./assets/heart.png" class="w-8" alt="">
                                     </div>
                                 </div>
@@ -155,7 +155,7 @@
                                     <div class="bg-[#FFE3E2] rounded-lg p-2">
                                         <img src="./assets/ambulance.png" class="w-8 " alt="">
                                     </div>
-                                    <div>
+                                    <div class="heart-btn">
                                         <img src="./assets/heart.png" class="w-8" alt="">
                                     </div>
                                 </div>
@@ -183,7 +183,7 @@
                                     <div class="bg-[#FFE3E2] rounded-lg p-2">
                                         <img src="./assets/emergency.png" class="w-8 " alt="">
                                     </div>
-                                    <div>
+                                    <div class="heart-btn">
                                         <img src="./assets/heart.png" class="w-8" alt="">
                                     </div>
                                 </div>
@@ -211,7 +211,7 @@
                                     <div class="bg-[#FFE3E2] rounded-lg p-2">
                                         <img src="./assets/fire-service.png" class="w-8 " alt="">
                                     </div>
-                                    <div>
+                                    <div class="heart-btn">
                                         <img src="./assets/heart.png" class="w-8" alt="">
                                     </div>
                                 </div>
@@ -239,7 +239,7 @@
                                     <div class="bg-[#FFE3E2] rounded-lg p-2">
                                         <img src="./assets/emergency.png" class="w-8 " alt="">
                                     </div>
-                                    <div>
+                                    <div class="heart-btn">
                                         <img src="./assets/heart.png" class="w-8" alt="">
                                     </div>
                                 </div>
@@ -265,9 +265,9 @@
                             <div class="card-body">
                                 <div class="flex justify-between p-2 ">
                                     <div class="bg-[#FFE3E2] rounded-lg p-2">
-                                        <img src="./assets/emergency.png" class="w-8 " alt="">
+                                        <img src="./assets/brac.png" class="w-8 " alt="">
                                     </div>
-                                    <div>
+                                    <div class="heart-btn">
                                         <img src="./assets/heart.png" class="w-8" alt="">
                                     </div>
                                 </div>
@@ -295,7 +295,7 @@
                                     <div class="bg-[#FFE3E2] rounded-lg p-2">
                                         <img src="./assets/Bangladesh-Railway.png" class="w-8 " alt="">
                                     </div>
-                                    <div>
+                                    <div class="heart-btn">
                                         <img src="./assets/heart.png" class="w-8" alt="">
                                     </div>
                                 </div>
@@ -332,7 +332,7 @@
         </main>
 
 
-
+        <script src="./scripts.js"></script>
     </body>
 
 </html>
