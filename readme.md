@@ -19,6 +19,7 @@ Ans: When we click an element inside a nested structure, the event is triggered 
 4. What is **Event Delegation** in JavaScript? Why is it useful?<br>
 Ans: Handle events for many elements with one parent listener.<br>
 
-5.Ans: Stops the event from bubbling further up (or down) the DOM tree.
+5.What is the difference between preventDefault() and stopPropagation() methods?<br>
+Ans: Stops the event from bubbling further up (or down) the DOM tree.
 ---
 
